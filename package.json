@@ -4,7 +4,7 @@
   "description": "OC-Template-handlebars ===",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/opentable/oc-template-handlebars/issues"
   },
-  "homepage": "https://github.com/opentable/oc-template-handlebars#readme"
+  "homepage": "https://github.com/opentable/oc-template-handlebars#readme",
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-opentable": "^6.0.0"
+  }
 }
