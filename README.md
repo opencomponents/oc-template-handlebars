@@ -1,3 +1,3 @@
-OC-Template-handlebars
+OC-Template-Handlebars
 ===
 
