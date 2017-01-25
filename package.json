@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint"
+    "test": "npm run lint && jest"
   },
   "info": {
     "type": "handlebars"
@@ -29,7 +29,8 @@
   "devDependencies": {
     "eslint": "^3.14.0",
     "eslint-config-opentable": "^6.0.0",
-    "ghooks": "^2.0.0"
+    "ghooks": "^2.0.0",
+    "jest": "^18.1.0"
   },
   "dependencies": {
     "handlebars": "^4.0.6"
