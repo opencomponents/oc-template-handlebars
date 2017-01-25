@@ -2,11 +2,7 @@ const handlebars = require('handlebars');
 const utils = require('./utils');
 
 module.exports = (options, callback) => {
-  const validationResult = utils.validator(
-      options.template,
-      options.templateType
-    );
-
+  const validationResult = utils.validator(options.template);
   if (!validationResult.isValid) {
     return callback(validationResult.error);
   }

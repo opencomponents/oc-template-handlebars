@@ -3,7 +3,7 @@ const utils = require('../src/utils');
 describe('when validating component', () => {
   describe('when component\'s handlebars version is obsolete', () => {
     const template = {compiler:[6,'>= 2.0.0-beta.1'],main:function(){return'Hello world!';},useData:!0}; // eslint-disable-line
-    const result = utils.validator(template, 'handlebars');
+    const result = utils.validator(template);
 
     test('should error', () => {
       expect(result.isValid).toBe(false);
@@ -13,15 +13,7 @@ describe('when validating component', () => {
 
   describe('when component\'s handlebars version is supported', () => {
     const template = {compiler:[7,'>= 4.0.0'],main:function(){return'Hello world!';},useData:!0}; // eslint-disable-line
-    const result = utils.validator(template, 'handlebars');
-
-    test('should be valid', () => {
-      expect(result.isValid).toBe(true);
-    });
-  });
-
-  describe('when component\'s template type is jade', () => {
-    const result = utils.validator('', 'jade');
+    const result = utils.validator(template);
 
     test('should be valid', () => {
       expect(result.isValid).toBe(true);
