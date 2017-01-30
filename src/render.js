@@ -9,6 +9,5 @@ module.exports = (options, callback) => {
 
   const linked = handlebars.template(options.template);
   const html = linked(options.model);
-
   return callback(null, html);
 };
