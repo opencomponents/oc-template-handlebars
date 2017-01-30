@@ -1,19 +1,15 @@
 {
   "name": "oc-template-handlebars",
   "version": "1.0.0",
-  "description": "OC-Template-handlebars ===",
+  "description": "OC-Template-handlebars",
   "main": "index.js",
   "scripts": {
+    "precommit": "npm run test",
     "lint": "eslint .",
-    "test": "npm run lint"
+    "test": "npm run lint && jest"
   },
   "info": {
     "type": "handlebars"
-  },
-  "config": {
-    "ghooks": {
-      "pre-commit": "npm run test"
-    }
   },
   "repository": {
     "type": "git",
@@ -29,7 +25,9 @@
   "devDependencies": {
     "eslint": "^3.14.0",
     "eslint-config-opentable": "^6.0.0",
-    "ghooks": "^2.0.0"
+    "eslint-plugin-import": "^1.16.0",
+    "husky": "^0.13.1",
+    "jest": "^18.1.0"
   },
   "dependencies": {
     "handlebars": "^4.0.6"
