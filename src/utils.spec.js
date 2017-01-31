@@ -1,4 +1,4 @@
-const utils = require('../src/utils');
+const utils = require('./utils');
 
 describe('utils module', () => {
   describe('when validating component', () => {

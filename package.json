@@ -2,7 +2,7 @@
   "name": "oc-template-handlebars",
   "version": "1.0.0",
   "description": "OC-Template-handlebars",
-  "main": "index.js",
+  "main": "src",
   "scripts": {
     "precommit": "npm run test",
     "lint": "eslint .",
