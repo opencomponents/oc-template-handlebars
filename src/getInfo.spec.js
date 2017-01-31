@@ -1,4 +1,4 @@
-const getInfo = require('../src/getInfo');
+const getInfo = require('./getInfo');
 
 describe('getInfo method', () => {
   describe('when invoking the method', () => {

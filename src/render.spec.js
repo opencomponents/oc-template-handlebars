@@ -2,9 +2,9 @@
 
 const handlebars = require('handlebars');
 
-jest.mock('../src/utils');
-const utils = require('../src/utils');
-const render = require('../src/render');
+jest.mock('./utils');
+const utils = require('./utils');
+const render = require('./render');
 
 const callback = jest.fn();
 const options = {

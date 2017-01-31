@@ -1,5 +1,5 @@
 const handlebars = require('handlebars');
-const precompile = require('../src/precompile');
+const precompile = require('./precompile');
 
 describe('precompile method', () => {
   describe('when invoking the method', () => {
