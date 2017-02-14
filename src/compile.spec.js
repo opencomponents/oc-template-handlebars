@@ -1,10 +1,10 @@
 const handlebars = require('handlebars');
-const precompile = require('./precompile');
+const compile = require('./compile');
 
-describe('precompile method', () => {
+describe('compile method', () => {
   describe('when invoking the method', () => {
     const template = 'Hello';
-    precompile(template);
+    compile(template);
 
     test('should correctly invoke handlebars precompile method', () => {
       expect(handlebars.precompile).toBeCalledWith(template);
