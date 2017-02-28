@@ -1,3 +1,4 @@
 const handlebars = require('handlebars');
 
-module.exports = template => handlebars.precompile(template);
+module.exports = (options, callback) =>
+  callback(handlebars.precompile(options.template));
