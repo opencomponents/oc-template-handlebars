@@ -1,7 +1,7 @@
 {
   "name": "oc-template-handlebars",
-  "version": "2.0.0",
-  "description": "OC-Template-handlebars",
+  "version": "3.0.0",
+  "description": "OC-Template-Handlebars",
   "main": "src",
   "scripts": {
     "precommit": "npm run test",
