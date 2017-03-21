@@ -31,11 +31,5 @@
   },
   "dependencies": {
     "handlebars": "^4.0.6"
-  },
-  "externals": {
-    "handlebars": {
-      "global": "Handlebars",
-      "url": "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.runtime.min.js"
-    }
   }
 }
