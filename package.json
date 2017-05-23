@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opentable/oc-template-handlebars.git"
+    "url": "git+https://github.com/opencomponents/oc-template-handlebars.git"
   },
   "keywords": [],
   "author": "Nick Balestra <nick@balestra.ch>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/opentable/oc-template-handlebars/issues"
+    "url": "https://github.com/opencomponents/oc-template-handlebars/issues"
   },
-  "homepage": "https://github.com/opentable/oc-template-handlebars#readme",
+  "homepage": "https://github.com/opencomponents/oc-template-handlebars#readme",
   "devDependencies": {
     "eslint": "^3.14.0",
     "eslint-config-opentable": "^6.0.0",
