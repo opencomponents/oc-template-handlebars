@@ -7,7 +7,11 @@ module.exports = (options, callback) => {
     return callback(validationResult.error);
   }
 
-  const linked = handlebars.template(options.template);
-  const html = linked(options.model);
-  return callback(null, html);
+  try {
+    const linked = handlebars.template(options.template);
+    const html = linked(options.model);
+    return callback(null, html);
+  } catch (e) {
+    return callback(e);
+  }
 };
