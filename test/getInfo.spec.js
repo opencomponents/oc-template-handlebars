@@ -1,4 +1,4 @@
-const getInfo = require('./getInfo');
+const getInfo = require('../packages/oc-template-handlebars/getInfo');
 
 describe('getInfo method', () => {
   describe('when invoking the method', () => {

@@ -1,9 +1,7 @@
-/* eslint-disable no-underscore-dangle, no-var */
-
 const handlebars = jest.genMockFromModule('handlebars');
 
 var linked = jest.fn();
-const __setTemplate = (fn) => {
+const __setTemplate = fn => {
   linked = fn;
 };
 

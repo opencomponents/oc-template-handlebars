@@ -1,7 +1,7 @@
 const constants = require('../constants');
 
 module.exports = {
-  validator: (template) => {
+  validator: template => {
     const isUnsupported = template.compiler[0] < 7;
     if (isUnsupported) {
       return {
