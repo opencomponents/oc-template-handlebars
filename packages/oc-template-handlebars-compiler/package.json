@@ -1,6 +1,6 @@
 {
   "name": "oc-template-handlebars-compiler",
-  "version": "1.0.0",
+  "version": "5.0.0",
   "description": "OC-Template-Handlebars-Compiler",
   "main": "index.js",
   "repository": {
@@ -8,9 +8,9 @@
     "url": "git+https://github.com/opencomponents/oc-template-handlebars.git"
   },
   "keywords": [],
-  "author": { 
-    "name" : "Nick Balestra",
-    "email" : "nick@balestra.ch"
+  "author": {
+    "name": "Nick Balestra",
+    "email": "nick@balestra.ch"
   },
   "license": "MIT",
   "bugs": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/opencomponents/oc-template-handlebars#readme",
   "dependencies": {
-    "oc-template-handlebars": "4.0.1",
-    "handlebars": "4.0.6"
+    "handlebars": "4.0.6",
+    "oc-template-handlebars": "5.0.0"
   }
 }
