@@ -1,5 +1,5 @@
 const handlebars = require('handlebars');
-const compile = require('./compile');
+const compile = require('../packages/oc-template-handlebars-compiler/compile');
 
 describe('compile method', () => {
   describe('when invoking the method', () => {

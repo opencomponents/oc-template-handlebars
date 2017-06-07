@@ -1,38 +1,20 @@
 {
-  "name": "oc-template-handlebars",
-  "version": "4.0.1",
-  "description": "OC-Template-Handlebars",
-  "main": "src",
-  "scripts": {
-    "precommit": "npm run test",
-    "lint": "eslint .",
-    "test": "npm run lint && jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/opencomponents/oc-template-handlebars.git"
-  },
-  "keywords": [],
-  "author": "Nick Balestra <nick@balestra.ch>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/opencomponents/oc-template-handlebars/issues"
-  },
-  "homepage": "https://github.com/opencomponents/oc-template-handlebars#readme",
   "devDependencies": {
-    "eslint": "^3.14.0",
-    "eslint-config-opentable": "^6.0.0",
-    "eslint-plugin-import": "^1.16.0",
-    "husky": "^0.13.1",
-    "jest": "^20.0.3"
+    "husky": "^0.13.4",
+    "jest": "^20.0.4",
+    "lerna": "^2.0.0-rc.5",
+    "lint-staged": "^3.6.0",
+    "prettier": "^1.4.2"
   },
-  "dependencies": {
-    "handlebars": "4.0.6"
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "precommit": "lint-staged",
+    "test": "jest"
   },
-  "externals": {
-    "handlebars": {
-      "global": "Handlebars",
-      "url": "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.runtime.min.js"
-    }
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }

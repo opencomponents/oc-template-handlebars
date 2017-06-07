@@ -1,10 +1,8 @@
-/* eslint-disable no-underscore-dangle, no-console */
-
 const handlebars = require('handlebars');
 
-jest.mock('./utils');
-const utils = require('./utils');
-const render = require('./render');
+jest.mock('../packages/oc-template-handlebars/utils');
+const utils = require('../packages/oc-template-handlebars/utils');
+const render = require('../packages/oc-template-handlebars/render');
 
 const linked = jest.fn(() => 'html');
 handlebars.__setTemplate(linked);
@@ -57,4 +55,3 @@ describe('render method', () => {
     });
   });
 });
-
