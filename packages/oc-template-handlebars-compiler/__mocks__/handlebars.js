@@ -1,6 +1,8 @@
+'use strict';
+
 const handlebars = jest.genMockFromModule('handlebars');
 
-var linked = jest.fn();
+let linked = jest.fn();
 const __setTemplate = fn => {
   linked = fn;
 };
